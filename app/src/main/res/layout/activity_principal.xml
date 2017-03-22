@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="#FFDA93"
+    tools:context="itesloscabos.com.carrito.PrincipalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_action_back"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carritos"
+            android:layout_gravity="left"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ic_action_storage"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:src="@mipmap/cutmypic" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="280dp"
+        android:layout_weight="1"
+        android:onClick="addCart"
+        android:src="@drawable/ic_action_name">
+
+    </android.support.design.widget.FloatingActionButton>
+
+</LinearLayout>

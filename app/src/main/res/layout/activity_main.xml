@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="#FFDA93"
+    tools:context="itesloscabos.com.carrito.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi carrito de Comida"
+                android:layout_gravity="left"
+                tools:ignore="MissingPrefix"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_action_settings"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@mipmap/cutmypic"
+        android:scaleType="fitCenter"
+        android:background="#FFDA93"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:src="@drawable/facebook"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/google"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/inicio"
+            android:layout_width="0dp"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Correo"
+            android:gravity="center"
+            android:fontFamily="roboto"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/registrarse"
+            android:layout_width="0dp"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="registrarse"
+            android:text="Registrarse"
+            android:textSize="20sp"
+            android:fontFamily="roboto"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

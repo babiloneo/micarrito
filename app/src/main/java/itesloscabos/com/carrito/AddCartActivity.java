@@ -74,7 +74,7 @@ public class AddCartActivity extends AppCompatActivity {
     private void enlazaEventosDeLista() {
 
     }
-    
+
     public void agregaSerie(){
     carrito add = new carrito();
         add.setNombre(nombre.getText().toString());
@@ -84,5 +84,7 @@ public class AddCartActivity extends AppCompatActivity {
 
         carritos.add(add);
         adapter.notifyDataSetChanged();
+
+
     }
 }
